@@ -15,10 +15,19 @@ body{
     font-weight: 700;
     padding: 15px 36px;
 }
-
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
 /* header section style */
 .header{
     background: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left top;
+    background-size: 500px, 70px;
 }
 
 /* nav related style */
@@ -50,11 +59,57 @@ nav a{
 
 /* banner section styles */
 .banner{
-    padding: 30px 30px 30px 130px;
+    padding: 30px 30px 0 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 500px;
+}
+.banner-greeting{
+    color:  #474747;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.banner-title{
+    color:  #181818;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.banner-description{
+    color:  #757575;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
 .banner .profile-pic{
     width: 350px;
 }
+#unique{
+    color: #FD6E0A;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    margin-left: 15px;
+}
 
+/* main section styles */
+
+/* about section styles */
+.about{
+    padding: 130px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 120px 0;
+}
+.section-description{
+    color:  #757575;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 0;
+}
