@@ -63,6 +63,7 @@ body {
 
 .header .navbar > ul {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -165,6 +166,7 @@ main {
     color: #474747;
     font-size: 12px;
     font-weight: 700;
+    text-align: center;
 }
 
 /* what i do section styles */
@@ -221,6 +223,10 @@ main {
     justify-content: space-between;
     gap: 30px;
     margin: 50px 0 0;
+}
+
+.resume .resume-container .column{
+    width: 50%;
 }
 
 .resume .resume-container .resume-column .resume-item .resume-item-title {
@@ -310,4 +316,118 @@ textarea {
     border: none;
     border-radius: 5px;
     background: #FFF;
+}
+
+
+/* responsive media query */
+@media only screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    .header .navbar{
+        flex-direction: column;
+        padding: 0;
+    }
+    .header .nav-title{
+        margin-bottom: 10px;
+    }
+    .header .navbar > ul{
+        width: 100%;
+        padding: 0 35px;
+        justify-content: space-between;
+    }
+    .header .banner{
+        padding: 0 35px;
+        flex-direction: column;
+    }
+    .header .banner .banner-content{
+        width: 100%;
+    }
+    .banner-greeting{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .about{
+        padding: 50px 15px;
+    }
+    .about .about-info-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .what-i-do .section-description{
+        padding: 0 10px;
+    }
+    .what-i-do .skills-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .resume .resume-container{
+        flex-direction: column;
+    }
+    .resume .resume-container .column{
+        width: 100%;
+    }
+    .footer .footer-container{
+        flex-direction: column;
+    }
+    .footer .footer-column{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media only screen and (min-width:565px) and (max-width:960px) {
+    .header{
+        background-image: none;
+    }
+    .header .navbar>ul {
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0 40px;
+    }
+    .header .navbar li{
+        margin-right: 25px;
+    }
+    .header .banner {
+        padding: 0 35px;
+        flex-direction: column;
+    }
+
+    .header .banner .banner-content {
+        width: 100%;
+    }
+
+    .banner-greeting {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .about {
+        padding: 50px 20px;
+    }
+    .about .about-info-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .what-i-do .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header .navbar {
+        flex-direction: column;
+    }
+
+    .header .nav-title {
+        margin-bottom: 10px;
+    }
+
+    .header .banner {
+        flex-direction: column;
+    }
+    .footer .footer-container {
+        flex-direction: column;
+    }
+
+    .footer .footer-column {
+        width: 100%;
+        padding: 0;
+    }
 }
